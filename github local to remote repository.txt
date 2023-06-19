@@ -1,0 +1,234 @@
+hp@Arijit MINGW64 ~
+$ cd Documents/
+
+hp@Arijit MINGW64 ~/Documents
+$ mkdir story
+
+hp@Arijit MINGW64 ~/Documents
+$ ls
+'16 bit processors.docx'
+'32 bit processors.docx'
+ 8085Setup.zip
+'Algo Assignment.docx'
+'Algo prac.docx'
+ Arduino/
+ ArijitGoswamiResume.pdf
+'Assignment resume.docx'
+ Audacity/
+'Bitcoin notes.docx'
+'Branch Change.docx'
+'C++ OOPS'/
+'C++ Third Week'/
+ C++File/
+'Coursera Vikkha.txt'
+'Cover Letter Assignment.docx'
+'Custom Office Templates'/
+ DSA/
+'DSA VINOD SIR.pdf'
+'GIT and GitHub'/
+'Greedy Algo, Dynamic Programing, Backtracking'/
+'Hostel Refund.docx'
+ HousePricePrediction.R
+ House_Price_Prediction.R
+'Industrial 1.pdf'
+'Industrial 4.pdf'
+'Industrial Chpt 1.pdf'
+ Locking_Techniques_In_DBMS.docx
+ ML/
+'ML Projects'/
+'ML Udemy'/
+'Machine Learning Certificates'/
+'Mathematical Functions in SQL.docx'
+'Memory management Techniques.docx'
+'My Music'@
+'My Personal Website Link.txt'
+'My Pictures'@
+'My Videos'@
+ Practical.pdf.jpg
+ Practical1.pdf
+ Practical2.pdf
+'Python Tutorial'/
+ Rplot.png
+ RstudioTut1.R
+ RstudioTut2.R
+'Signals and System Assignment.docx'
+'Sound recordings'/
+'The Complete 2021 Web Development Bootcamp'/
+'Theory of Computation'/
+'Unit 1 Operating System.docx'
+'Unit 2 Operating System.docx'
+'Virtual memory.docx'
+'WEB DEVELOPMENT'/
+ bootstrap_grid.txt
+ bootstrap_navbar.txt
+ desktop.ini
+'eng. drawing practical.docx'
+ intro-to-node/
+ replyChallenge/
+ sheet/
+ story/
+
+hp@Arijit MINGW64 ~/Documents
+$ cd story/
+
+hp@Arijit MINGW64 ~/Documents/story
+$ touch chapter1.txt
+
+hp@Arijit MINGW64 ~/Documents/story
+$ open chapter1.txt
+bash: open: command not found
+
+hp@Arijit MINGW64 ~/Documents/story
+$ start chapter1.txt
+
+hp@Arijit MINGW64 ~/Documents/story
+$ git init
+Initialized empty Git repository in C:/Users/hp/Documents/story/.git/
+
+hp@Arijit MINGW64 ~/Documents/story (master)
+$ ls -a
+./  ../  .git/  chapter1.txt
+
+hp@Arijit MINGW64 ~/Documents/story (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        chapter1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+hp@Arijit MINGW64 ~/Documents/story (master)
+$ git add chapter1.txt
+
+hp@Arijit MINGW64 ~/Documents/story (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   chapter1.txt
+
+
+hp@Arijit MINGW64 ~/Documents/story (master)
+$ git commit -m "Complete chapter 1"
+[master (root-commit) 66b0941] Complete chapter 1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 chapter1.txt
+
+hp@Arijit MINGW64 ~/Documents/story (master)
+$ touch chapter2.txt chapter3.txt
+
+hp@Arijit MINGW64 ~/Documents/story (master)
+$ start chapter2.txt
+
+hp@Arijit MINGW64 ~/Documents/story (master)
+$ start chapter3.txt
+
+hp@Arijit MINGW64 ~/Documents/story (master)
+$ git add .
+
+hp@Arijit MINGW64 ~/Documents/story (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   chapter2.txt
+        new file:   chapter3.txt
+
+
+hp@Arijit MINGW64 ~/Documents/story (master)
+$ git commit -m "Complete chapter2 and 3"
+[master f544beb] Complete chapter2 and 3
+ 2 files changed, 1 insertion(+)
+ create mode 100644 chapter2.txt
+ create mode 100644 chapter3.txt
+
+hp@Arijit MINGW64 ~/Documents/story (master)
+$ git log
+commit f544beb474edf9a6f68e6f0ea31aeb32114777e5 (HEAD -> master)
+Author: arijit <arijitgoswamiindia2001@gmail.com>
+Date:   Mon Jun 19 11:31:52 2023 +0530
+
+    Complete chapter2 and 3
+
+commit 66b09418212509e3d7f1aea3931e1f4bf5289932
+Author: arijit <arijitgoswamiindia2001@gmail.com>
+Date:   Mon Jun 19 11:26:47 2023 +0530
+
+    Complete chapter 1
+
+hp@Arijit MINGW64 ~/Documents/story (master)
+$ git add .
+
+hp@Arijit MINGW64 ~/Documents/story (master)
+$ git commit -m "saved chapter 3"
+[master efe9e03] saved chapter 3
+ 1 file changed, 1 insertion(+)
+
+hp@Arijit MINGW64 ~/Documents/story (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   chapter3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+hp@Arijit MINGW64 ~/Documents/story (master)
+$ git diff chapter3.txt
+diff --git a/chapter3.txt b/chapter3.txt
+index 4e01de2..23d576f 100644
+--- a/chapter3.txt
++++ b/chapter3.txt
+@@ -1 +1 @@
+-Ami mori nijer jalai, Nogen amar gof dekheche.
+\ No newline at end of file
++ohogffglohipghphlugyffvilfgvhkmyi
+\ No newline at end of file
+
+hp@Arijit MINGW64 ~/Documents/story (master)
+$ git checkout chapter3.txt
+Updated 1 path from the index
+
+hp@Arijit MINGW64 ~/Documents/story (master)
+$ git log
+commit efe9e03254447e061e11f541bd683f737b3afe60 (HEAD -> master)
+Author: arijit <arijitgoswamiindia2001@gmail.com>
+Date:   Mon Jun 19 11:36:52 2023 +0530
+
+    saved chapter 3
+
+commit f544beb474edf9a6f68e6f0ea31aeb32114777e5
+Author: arijit <arijitgoswamiindia2001@gmail.com>
+Date:   Mon Jun 19 11:31:52 2023 +0530
+
+    Complete chapter2 and 3
+
+commit 66b09418212509e3d7f1aea3931e1f4bf5289932
+Author: arijit <arijitgoswamiindia2001@gmail.com>
+Date:   Mon Jun 19 11:26:47 2023 +0530
+
+    Complete chapter 1
+
+hp@Arijit MINGW64 ~/Documents/story (master)
+$ git remote add origin https://github.com/ArijitGo/Story.git
+
+hp@Arijit MINGW64 ~/Documents/story (master)
+$ git push -u origin master
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (10/10), 823 bytes | 274.00 KiB/s, done.
+Total 10 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/ArijitGo/Story.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
